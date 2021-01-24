@@ -159,4 +159,4 @@ MonoBehaviour:
   ballTransform: {fileID: 8908222719231924844}
   ballDefaultPos: {x: 0.335, y: 2, z: 13}
   ballPitchPos: {x: 0.335, y: 0.05, z: 7}
-  ballEndPos: {x: 0.335, y: 2, z: -8}
+  ballEndPos: {x: 0.335, y: 2, z: -10}

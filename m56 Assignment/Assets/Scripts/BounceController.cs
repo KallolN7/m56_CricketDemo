@@ -56,6 +56,9 @@ public class BounceController : MonoBehaviour
 
     private void AnimateSlider()
     {
+        sliderEndValue = slider.maxValue;
+        sliderDefaultValue = slider.minValue;
+
         sliderSequence = DOTween.Sequence().SetRecyclable(true).SetAutoKill(false);
         sliderSequence.Append(slider.DOValue(sliderEndValue, animDuration).SetEase(Ease.Linear));
         sliderSequence.SetLoops(-1, LoopType.Yoyo);

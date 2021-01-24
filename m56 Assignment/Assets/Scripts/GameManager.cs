@@ -61,7 +61,6 @@ public class GameManager : MonoBehaviour
     {
         ResetGame();
         BowlSpinSwingController.instance.StartSliderAnim();
-        ScoreboardController.instance.UpdateInputText("Press Spacebar To select Spin/Swing");
     }
 
     private void EndGame()
@@ -78,6 +77,8 @@ public class GameManager : MonoBehaviour
         Config.didHitWicket = false;
         Config.canBowl = true;
         Config.InputIndex = 0;
+        ScoreboardController.instance.UpdateInputText("Press Spacebar To select Spin/Swing");
+        ScoreboardController.instance.UpdateBowlerTextState(true);
     }
 
     private void SetDefaultState()
@@ -90,6 +91,7 @@ public class GameManager : MonoBehaviour
         Config.canBowl = true;
         Config.InputIndex = 0;
         ScoreboardController.instance.UpdateInputText("Press Spacebar To select Spin/Swing");
+        ScoreboardController.instance.UpdateBowlerTextState(true);
     }
 
     private void UpdateWicketHit()

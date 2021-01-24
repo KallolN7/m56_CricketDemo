@@ -17,6 +17,8 @@ public class ScoreboardController : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI inputText;
     [SerializeField]
+    private GameObject bowlerSwitchTextObj;
+    [SerializeField]
     private RectTransform BowledTextRect;
 
     private Sequence bowledTxtSequence;
@@ -24,7 +26,7 @@ public class ScoreboardController : MonoBehaviour
     public static ScoreboardController instance;
     #region Public Methods
 
-    public void OnClickSwitchBowler()
+    public void SwitchBowler()
     {
         GameManager.instance.UpdateBowlerType();
         UpdateBowlerText();
@@ -57,6 +59,11 @@ public class ScoreboardController : MonoBehaviour
     public void UpdateInputText(string text)
     {
         inputText.text = text;
+    }
+
+    public void UpdateBowlerTextState(bool state)
+    {
+        bowlerSwitchTextObj.SetActive(state);
     }
 
     #endregion

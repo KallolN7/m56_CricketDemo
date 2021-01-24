@@ -32,6 +32,7 @@ public class InputManager : MonoBehaviour
                 BounceController.instance.StopSlider();
                 GameManager.instance.GetBowlerController().StartBowling();
                 ScoreboardController.instance.UpdateInputText("");
+                ScoreboardController.instance.UpdateBowlerTextState(false);
                 Config.canBowl = false;
             }
         }
@@ -49,7 +50,7 @@ public class InputManager : MonoBehaviour
         //if (Input.GetKeyDown(KeyCode.Alpha3))
         //    GameManager.instance.RestartGame();
 
-        if (Input.GetKeyDown(KeyCode.Alpha4) && Config.canBowl)
-            ScoreboardController.instance.OnClickSwitchBowler();
+        if (Input.GetKeyDown(KeyCode.LeftShift) && Config.canBowl)
+            ScoreboardController.instance.SwitchBowler();
     }
 }

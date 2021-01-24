@@ -29,8 +29,8 @@ public static class BallAnimationData
 {
     public const float ballPitchTimeForFastBowler = 0.5f;
     public const float ballEndTimeForFastBowler = 0.7f;
-    public const float ballPitchTimeForSpinner = 0.8f;
-    public const float ballEndTimeForSpinner = 1;
+    public const float ballPitchTimeForSpinner = 0.9f;
+    public const float ballEndTimeForSpinner = 1.1f;
     public const float deviationFactor = 3;
     public const float deviationConstant = 1.5f;
     public const float minYPos = 0.1f;

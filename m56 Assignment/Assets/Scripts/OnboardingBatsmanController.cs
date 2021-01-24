@@ -766,19 +766,19 @@ namespace Deftouch.Asc.OnBoarding
 
         #endregion
 
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.LeftShift))
-            {
-                GetAnimatorStateReferences();
-                PlayBatsManAnimation(triggerShot, animationSpeed);
-            }
-            if (Input.GetKeyDown(KeyCode.LeftControl))
-            {
-                GetAnimatorStateReferences();
-                ResetToIdleAnimation();
-            }
-        }
+        //private void Update()
+        //{
+        //    if (Input.GetKeyDown(KeyCode.LeftShift))
+        //    {
+        //        GetAnimatorStateReferences();
+        //        PlayBatsManAnimation(triggerShot, animationSpeed);
+        //    }
+        //    if (Input.GetKeyDown(KeyCode.LeftControl))
+        //    {
+        //        GetAnimatorStateReferences();
+        //        ResetToIdleAnimation();
+        //    }
+        //}
 
         public void InitBatsman()
         {
