@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: OnboardingAnim_BowlerOverride_V3
+  m_Controller: {fileID: 9100000, guid: b5fd4111c5fa52d488b529d548f281b7, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400002, guid: 8ede95625069f4943a9b495e3f429286, type: 3}
+    m_OverrideClip: {fileID: 7400024, guid: 11832279847399a4cae200aa7b26c770, type: 3}
+  - m_OriginalClip: {fileID: 7402576, guid: 3675ed4a09fb5434aac7e442ba608f7b, type: 3}
+    m_OverrideClip: {fileID: 7402626, guid: 3675ed4a09fb5434aac7e442ba608f7b, type: 3}
+  - m_OriginalClip: {fileID: 7400004, guid: 8ede95625069f4943a9b495e3f429286, type: 3}
+    m_OverrideClip: {fileID: 7400090, guid: 8ede95625069f4943a9b495e3f429286, type: 3}
+  - m_OriginalClip: {fileID: 7400002, guid: 11832279847399a4cae200aa7b26c770, type: 3}
+    m_OverrideClip: {fileID: 7400020, guid: 11832279847399a4cae200aa7b26c770, type: 3}

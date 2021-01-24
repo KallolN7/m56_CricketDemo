@@ -1,0 +1,15 @@
+[
+{"name":"1_Ball Juggle","start":154,"end":570,"loop":false},
+{"name":"2_Ball Juggle Left Right Look","start":618,"end":768,"loop":false},
+{"name":"3_Ball Shine Look Left Right","start":770,"end":1026,"loop":false},
+{"name":"4_Place Field 1","start":1176,"end":1466,"loop":false},
+{"name":"5_Place Field 2","start":1496,"end":1672,"loop":false},
+{"name":"6_Appeal Celebration 1","start":2800,"end":2936,"loop":false},
+{"name":"7_Appeal Celebration 2","start":3000,"end":3108,"loop":false},
+{"name":"8_Appeal Dismay 1","start":3200,"end":3409,"loop":false},
+{"name":"9_Appeal Catch Drop Angry","start":3500,"end":3652,"loop":false},
+{"name":"10_Bowler Idle","start":3700,"end":3820,"loop":false},
+{"name":"11_Bowler Idle_Fake","start":3700,"end":3820,"loop":true},
+{"name":"12_Miss Bowler React","start":3900,"end":3960,"loop":false},
+{"name":"13_Generic Bowler Celebration","start":4000,"end":4072,"loop":false}
+]

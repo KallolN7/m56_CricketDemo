@@ -1,0 +1,12 @@
+[
+{"name":"Recovery_Celebration","start":400,"end":510,"loop":false},
+{"name":"Bowler_Celebration","start":200,"end":288,"loop":false},
+{"name":"Fielder_Celebration","start":800,"end":881,"loop":false},
+{"name":"Keeper_Celebration","start":2000,"end":2105,"loop":false},
+{"name":"Fielder_Celebration1","start":6020,"end":6172,"loop":false},
+{"name":"Fielder_Celebration2","start":6220,"end":6372,"loop":false},
+{"name":"Fielder_Celebration3","start":6420,"end":6572,"loop":false},
+{"name":"Fielder_Celebration4","start":6620,"end":6772,"loop":false},
+{"name":"Fielder_Celebration5","start":6800,"end":6952,"loop":false},
+{"name":"Fielder_HighFive", "start":5000,"end":5115,"loop":false}
+]

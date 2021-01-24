@@ -1,0 +1,514 @@
+fileFormatVersion: 2
+guid: ee0fe0b71f188cf4698e75fc47e0dae4
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Anckle_L
+    100002: Anckle_R
+    100004: //RootNode
+    100006: Ball_L
+    100008: Ball_R
+    100010: Chest
+    100012: Clavical_L
+    100014: Clavical_R
+    100016: Elbow_JNT_IK_L
+    100018: Elbow_JNT_IK_R
+    100020: Head
+    100022: Hip_Root
+    100024: Knee_L
+    100026: Knee_R
+    100028: L_Index_Finger1
+    100030: L_Index_Finger2
+    100032: L_Index_Finger3
+    100034: L_Index_Finger4
+    100036: L_Middle_Finger1
+    100038: L_Middle_Finger2
+    100040: L_Middle_Finger3
+    100042: L_Middle_Finger4
+    100044: L_Pinky_Finger1
+    100046: L_Pinky_Finger2
+    100048: L_Pinky_Finger3
+    100050: L_Pinky_Finger4
+    100052: L_Ring_Finger1
+    100054: L_Ring_Finger2
+    100056: L_Ring_Finger3
+    100058: L_Ring_Finger4
+    100060: L_Thumb_Finger1
+    100062: L_Thumb_Finger2
+    100064: L_Thumb_Finger3
+    100066: L_Thumb_Finger4
+    100068: LegUp_L
+    100070: LegUp_R
+    100072: Neck
+    100074: R_Index_Finger1
+    100076: R_Index_Finger2
+    100078: R_Index_Finger3
+    100080: R_Index_Finger4
+    100082: R_Middle_Finger1
+    100084: R_Middle_Finger2
+    100086: R_Middle_Finger3
+    100088: R_Middle_Finger4
+    100090: R_Pinky_Finger1
+    100092: R_Pinky_Finger2
+    100094: R_Pinky_Finger3
+    100096: R_Pinky_Finger4
+    100098: R_Ring_Finger1
+    100100: R_Ring_Finger2
+    100102: R_Ring_Finger3
+    100104: R_Ring_Finger4
+    100106: R_Thumb_Finger1
+    100108: R_Thumb_Finger2
+    100110: R_Thumb_Finger3
+    100112: R_Thumb_Finger4
+    100114: Shoulder_JNT_IK_L
+    100116: Shoulder_JNT_IK_R
+    100118: Spine1
+    100120: Spine2
+    100122: Toe_L
+    100124: Toe_R
+    100126: Wrist_JNT_IK_L
+    100128: Wrist_JNT_IK_R
+    400000: Anckle_L
+    400002: Anckle_R
+    400004: //RootNode
+    400006: Ball_L
+    400008: Ball_R
+    400010: Chest
+    400012: Clavical_L
+    400014: Clavical_R
+    400016: Elbow_JNT_IK_L
+    400018: Elbow_JNT_IK_R
+    400020: Head
+    400022: Hip_Root
+    400024: Knee_L
+    400026: Knee_R
+    400028: L_Index_Finger1
+    400030: L_Index_Finger2
+    400032: L_Index_Finger3
+    400034: L_Index_Finger4
+    400036: L_Middle_Finger1
+    400038: L_Middle_Finger2
+    400040: L_Middle_Finger3
+    400042: L_Middle_Finger4
+    400044: L_Pinky_Finger1
+    400046: L_Pinky_Finger2
+    400048: L_Pinky_Finger3
+    400050: L_Pinky_Finger4
+    400052: L_Ring_Finger1
+    400054: L_Ring_Finger2
+    400056: L_Ring_Finger3
+    400058: L_Ring_Finger4
+    400060: L_Thumb_Finger1
+    400062: L_Thumb_Finger2
+    400064: L_Thumb_Finger3
+    400066: L_Thumb_Finger4
+    400068: LegUp_L
+    400070: LegUp_R
+    400072: Neck
+    400074: R_Index_Finger1
+    400076: R_Index_Finger2
+    400078: R_Index_Finger3
+    400080: R_Index_Finger4
+    400082: R_Middle_Finger1
+    400084: R_Middle_Finger2
+    400086: R_Middle_Finger3
+    400088: R_Middle_Finger4
+    400090: R_Pinky_Finger1
+    400092: R_Pinky_Finger2
+    400094: R_Pinky_Finger3
+    400096: R_Pinky_Finger4
+    400098: R_Ring_Finger1
+    400100: R_Ring_Finger2
+    400102: R_Ring_Finger3
+    400104: R_Ring_Finger4
+    400106: R_Thumb_Finger1
+    400108: R_Thumb_Finger2
+    400110: R_Thumb_Finger3
+    400112: R_Thumb_Finger4
+    400114: Shoulder_JNT_IK_L
+    400116: Shoulder_JNT_IK_R
+    400118: Spine1
+    400120: Spine2
+    400122: Toe_L
+    400124: Toe_R
+    400126: Wrist_JNT_IK_L
+    400128: Wrist_JNT_IK_R
+    7400000: Take 001
+    7400002: Recovery_Celebration
+    7400004: Bowler_Celebration
+    7400006: Fielder_Celebration
+    7400008: Keeper_Celebration
+    7400010: Fielder_Celebration1
+    7400012: Fielder_Celebration2
+    7400014: Fielder_Celebration3
+    7400016: Fielder_Celebration4
+    7400018: Fielder_Celebration5
+    7400020: Fielder_Celebration6
+    7400022: Fielder_HighFive
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Recovery_Celebration
+      takeName: 
+      firstFrame: 400
+      lastFrame: 510
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Bowler_Celebration
+      takeName: 
+      firstFrame: 200
+      lastFrame: 288
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Fielder_Celebration
+      takeName: 
+      firstFrame: 800
+      lastFrame: 881
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Keeper_Celebration
+      takeName: 
+      firstFrame: 2000
+      lastFrame: 2105
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Fielder_Celebration1
+      takeName: 
+      firstFrame: 6020
+      lastFrame: 6172
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Fielder_Celebration2
+      takeName: 
+      firstFrame: 6220
+      lastFrame: 6372
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Fielder_Celebration3
+      takeName: 
+      firstFrame: 6420
+      lastFrame: 6572
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Fielder_Celebration4
+      takeName: 
+      firstFrame: 6620
+      lastFrame: 6772
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Fielder_Celebration5
+      takeName: 
+      firstFrame: 6800
+      lastFrame: 6952
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Fielder_HighFive
+      takeName: 
+      firstFrame: 5000
+      lastFrame: 5115
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

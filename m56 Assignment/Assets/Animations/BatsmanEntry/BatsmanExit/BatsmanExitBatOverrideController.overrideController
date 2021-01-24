@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BatsmanExitBatOverrideController
+  m_Controller: {fileID: 9100000, guid: 68618a4d8dff6294995ba019a0f50a8e, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400250, guid: 81edc39daf92448e18a42dea813aeec6, type: 3}
+    m_OverrideClip: {fileID: 7400092, guid: 5eea9bd2556f44a95afd80d7e14f4201, type: 3}
+  - m_OriginalClip: {fileID: 7400166, guid: f8b235c3ac9d6fa4d9318062a0a9377c, type: 3}
+    m_OverrideClip: {fileID: 7400166, guid: 1550981797c89c342a6f3fc1d88a698e, type: 3}
+  - m_OriginalClip: {fileID: 7400166, guid: c3a593854af3e894b8412ba6d8ef2416, type: 3}
+    m_OverrideClip: {fileID: 7400166, guid: acfe6b4e6b94303479023833f403b9ef, type: 3}

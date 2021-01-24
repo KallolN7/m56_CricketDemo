@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: 783cc1453735f2d4aba05eafd2a5e541
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Chr_9_Shoaib
+    100002: Head
+    100004: //RootNode
+    100006: Shoes_Chr_9
+    100008: Body
+    100010: RokokoGuy_Hips
+    100012: RokokoGuy_LeftFoot
+    100014: RokokoGuy_LeftLeg
+    100016: RokokoGuy_LeftToe
+    100018: RokokoGuy_LeftToeEnd
+    100020: RokokoGuy_LeftUpLeg
+    100022: RokokoGuy_RightFoot
+    100024: RokokoGuy_RightLeg
+    100026: RokokoGuy_RightToe
+    100028: RokokoGuy_RightToeEnd
+    100030: RokokoGuy_RightUpLeg
+    100032: RokokoGuy_root
+    100034: Anckle_L
+    100036: Anckle_R
+    100038: Ball_L
+    100040: Ball_R
+    100042: Heads
+    100044: Hip_Root
+    100046: Knee_L
+    100048: Knee_R
+    100050: LegUp_L
+    100052: LegUp_R
+    100054: Toe_L
+    100056: Toe_R
+    400000: Chr_9_Shoaib
+    400002: Head
+    400004: //RootNode
+    400006: Shoes_Chr_9
+    400008: Body
+    400010: RokokoGuy_Hips
+    400012: RokokoGuy_LeftFoot
+    400014: RokokoGuy_LeftLeg
+    400016: RokokoGuy_LeftToe
+    400018: RokokoGuy_LeftToeEnd
+    400020: RokokoGuy_LeftUpLeg
+    400022: RokokoGuy_RightFoot
+    400024: RokokoGuy_RightLeg
+    400026: RokokoGuy_RightToe
+    400028: RokokoGuy_RightToeEnd
+    400030: RokokoGuy_RightUpLeg
+    400032: RokokoGuy_root
+    400034: Anckle_L
+    400036: Anckle_R
+    400038: Ball_L
+    400040: Ball_R
+    400042: Heads
+    400044: Hip_Root
+    400046: Knee_L
+    400048: Knee_R
+    400050: LegUp_L
+    400052: LegUp_R
+    400054: Toe_L
+    400056: Toe_R
+    2100000: Mat_12_U
+    2300000: Shoes_Chr_9
+    3300000: Shoes_Chr_9
+    4300000: Shoes_Chr_9
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Shoes_Chr_9
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: LegUp_R
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

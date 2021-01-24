@@ -1,0 +1,13 @@
+[
+{"name":"0_0_0","start":0,"end":50,"loop":false},
+{"name":"1_0_3","start":300,"end":350,"loop":false},
+{"name":"2_0_8","start":800,"end":870,"loop":false},
+{"name":"3_2_0","start":1000,"end":1050,"loop":false},
+{"name":"4_2_3","start":1300,"end":1350,"loop":false},
+{"name":"5_2_8","start":1800,"end":1860,"loop":false},
+{"name":"6_1_0","start":2000,"end":2050,"loop":false},
+{"name":"7_1_3","start":2300,"end":2350,"loop":false},
+{"name":"8_1_8","start":2800,"end":2860,"loop":false},
+{"name":"10_Short_Stance","start":6756,"end":6807,"loop":false},
+{"name":"11_Stance_To_Idle","start":6756,"end":6834,"loop":false}
+]

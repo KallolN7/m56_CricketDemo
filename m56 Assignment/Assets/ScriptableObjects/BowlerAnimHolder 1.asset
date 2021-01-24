@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 271a8e59442cf274cac3f55b73053644, type: 3}
+  m_Name: BowlerAnimHolder 1
+  m_EditorClassIdentifier: 
+  bowlerIdleAnimations:
+  - {fileID: 7400002, guid: 11832279847399a4cae200aa7b26c770, type: 3}
+  - {fileID: 7400004, guid: 11832279847399a4cae200aa7b26c770, type: 3}
+  - {fileID: 7400006, guid: 11832279847399a4cae200aa7b26c770, type: 3}
+  - {fileID: 7400008, guid: 11832279847399a4cae200aa7b26c770, type: 3}
+  - {fileID: 7400010, guid: 11832279847399a4cae200aa7b26c770, type: 3}
+  - {fileID: 7400020, guid: 11832279847399a4cae200aa7b26c770, type: 3}
+  bowlerAnimations:
+  - bowlerName: Fast
+    animationClips:
+    - {fileID: 7402608, guid: 3675ed4a09fb5434aac7e442ba608f7b, type: 3}
+  - bowlerName: Spinner
+    animationClips:
+    - {fileID: 7402626, guid: 3675ed4a09fb5434aac7e442ba608f7b, type: 3}
+  bowlerBackToWicketAnimations:
+  - {fileID: 7400088, guid: 8ede95625069f4943a9b495e3f429286, type: 3}
+  - {fileID: 7400090, guid: 8ede95625069f4943a9b495e3f429286, type: 3}
+  - {fileID: 7400092, guid: 8ede95625069f4943a9b495e3f429286, type: 3}
+  - {fileID: 7400094, guid: 8ede95625069f4943a9b495e3f429286, type: 3}
+  bowlerDejectedAnimation: {fileID: 7400024, guid: 11832279847399a4cae200aa7b26c770, type: 3}
