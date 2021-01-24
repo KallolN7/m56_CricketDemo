@@ -1,14 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Deftouch.Asc.OnBoarding;
+using m56;
+
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField]
-    private OnboardingBowlerController bowlerController;
+    private BowlerController bowlerController;
     [SerializeField]
-    private OnboardingStumps_C stumps_C;
+    private StumpsController stumps_C;
+    [SerializeField]
+    private BatsmanController batsmanController;
+
     public static GameManager instance;
 
     #region Public Region
@@ -32,11 +36,16 @@ public class GameManager : MonoBehaviour
         Debug.Log("GameManager, IsSpinner: " + Config.IS_BOWLER_SPINNER);
     }
 
-    public OnboardingBowlerController GetBowlerController()
+    public BowlerController GetBowlerController()
     {
         return bowlerController;
     }
     
+    public BatsmanController GetBatsmanController()
+    {
+        return batsmanController;
+    }
+
     public void RestartGame()
     {
         UpdateScore();
@@ -70,10 +79,12 @@ public class GameManager : MonoBehaviour
 
     private void ResetGame()
     {
+        batsmanController.InitBatsman();
         Config.wicketHitCount = 0;
         Config.ballsBowledCount = 0;
         ScoreboardController.instance.ResetScoreboard();
         BowlSpinSwingController.instance.UpdateSwingSpinTypeText();
+        BallPitchController.instance.SetDefaultPos();
         Config.didHitWicket = false;
         Config.canBowl = true;
         Config.InputIndex = 0;
@@ -86,6 +97,7 @@ public class GameManager : MonoBehaviour
         BowlSpinSwingController.instance.StartSliderAnim();
         stumps_C.ResetStumps();
         bowlerController.SetDefaultPos();
+        batsmanController.InitBatsman();
         Config.didHitWicket = false;
         BallPitchController.instance.SetDefaultPos();
         Config.canBowl = true;

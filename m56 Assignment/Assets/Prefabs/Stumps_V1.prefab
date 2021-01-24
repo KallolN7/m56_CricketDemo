@@ -809,10 +809,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4448458942716414}
   - component: {fileID: 95200281939626186}
-  - component: {fileID: 6554833293727288345}
   - component: {fileID: 735780216791260672}
+  - component: {fileID: 4362477697568588487}
   m_Layer: 0
-  m_Name: OnboardingStumps_V1
+  m_Name: Stumps_V1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -853,21 +853,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &6554833293727288345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1951015815915902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 274987504d93f3b478106cf4b421f595, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collider: {fileID: 0}
-  anim: {fileID: 95200281939626186}
-  stumpsAnimHolder: {fileID: 11400000, guid: 396055304fce77c49953350287d62274, type: 2}
 --- !u!65 &735780216791260672
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -881,6 +866,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.044477675, y: 0.12425467, z: 0.016763454}
   m_Center: {x: 0.0017413518, y: 0.05748433, z: 0.1639214}
+--- !u!114 &4362477697568588487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1951015815915902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 589c25b5013d9184ba528385eef53742, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 95200281939626186}
+  stumpsAnimHolder: {fileID: 11400000, guid: 396055304fce77c49953350287d62274, type: 2}
 --- !u!1 &1985906031731890
 GameObject:
   m_ObjectHideFlags: 0

@@ -32,8 +32,8 @@ namespace Deftouch.Asc.OnBoarding
         [SerializeField]
         private Vector3 bowlerDefaultPosForSpinner = new Vector3(1.73f, 0, 14.95f);
 
-        private Transform rightHand;
-        private Transform rightHandWrist; // I am using this for position ball in hand because of new rig there was issues if i use finger.
+        //private Transform rightHand;
+        //private Transform rightHandWrist; // I am using this for position ball in hand because of new rig there was issues if i use finger.
         public GameObject fakeBowlerIdle;
 
 
@@ -95,15 +95,15 @@ namespace Deftouch.Asc.OnBoarding
 
 
         #region PublicMethods
-        public void Init()
-        {
-            rightHand = this.transform.Find("Player_IK_Bowler/Hip_Root/Spine1/Spine2/Clavical_R/Shoulder_JNT_IK_R/Elbow_JNT_IK_R/Wrist_JNT_IK_R/R_Index_Finger1/R_Index_Finger2/R_Index_Finger3");
-            rightHandWrist = this.transform.Find("Player_IK_Bowler/Hip_Root/Spine1/Spine2/Clavical_R/Shoulder_JNT_IK_R/Elbow_JNT_IK_R/Wrist_JNT_IK_R");
+        //public void Init()
+        //{
+        //    rightHand = this.transform.Find("Player_IK_Bowler/Hip_Root/Spine1/Spine2/Clavical_R/Shoulder_JNT_IK_R/Elbow_JNT_IK_R/Wrist_JNT_IK_R/R_Index_Finger1/R_Index_Finger2/R_Index_Finger3");
+        //    rightHandWrist = this.transform.Find("Player_IK_Bowler/Hip_Root/Spine1/Spine2/Clavical_R/Shoulder_JNT_IK_R/Elbow_JNT_IK_R/Wrist_JNT_IK_R");
 
-            // ResetToRunupPosition();
-            bowlerfilderDefaultpos = new Vector3(bowlerParent.transform.position.x, bowlerParent.transform.position.y, 11.9f);
+        //    // ResetToRunupPosition();
+        //    bowlerfilderDefaultpos = new Vector3(bowlerParent.transform.position.x, bowlerParent.transform.position.y, 11.9f);
 
-        }
+        //}
 
         /// <summary>
         /// THis is called when state get changed to OnUpdatingScores
@@ -113,7 +113,11 @@ namespace Deftouch.Asc.OnBoarding
             animBowler.ResetTrigger(runupHash);
             StopBowlerRunUpCoroutine();
             AssignRandomIdleAnimation();
-            RepositionBowler(AllCoordinates.releasePointsDictionary[Config.BOWLER_RELEASE_POINT].GetReleasePoint() - GetRpOffset());
+            if(Config.IS_BOWLER_SPINNER == 1)
+                RepositionBowler(BowlerAnimData.resetPosForSpinner);
+            else
+                RepositionBowler(BowlerAnimData.resetPosForPacer);
+            //RepositionBowler(AllCoordinates.releasePointsDictionary[Config.BOWLER_RELEASE_POINT].GetReleasePoint() - GetRpOffset());
             ShowBowlerHideFielder(true);
             isBowlerRunning = false;
             animBowler.SetTrigger("Stance");
@@ -220,7 +224,8 @@ namespace Deftouch.Asc.OnBoarding
         /// </summary>
         void RepositionBowler(Vector3 startPos)
         {
-            bowlerParent.position = new Vector3(startPos.x, bowlerParent.position.y, startPos.z); //Pivot is aligned with the release point
+            bowlerParent.position = new Vector3(startPos.x, bowlerParent.position.y, startPos.z); 
+            Debug.Log("OnboardingBowlerController, RepositionBowler: " + startPos);
         }
 
         private Vector3 GetRpOffset()

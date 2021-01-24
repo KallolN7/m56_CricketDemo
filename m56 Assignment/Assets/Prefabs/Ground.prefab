@@ -270,7 +270,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5023663202714487077, guid: 01b9a585022eba84392bee3a20589411, type: 3}
       propertyPath: m_Name
-      value: OnboardingBatsmanController
+      value: BatsmanController
       objectReference: {fileID: 0}
     - target: {fileID: 5023663202714487078, guid: 01b9a585022eba84392bee3a20589411, type: 3}
       propertyPath: m_LocalPosition.x

@@ -3,6 +3,7 @@ using DG.Tweening;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 namespace Deftouch.Asc.OnBoarding
 {
@@ -766,25 +767,18 @@ namespace Deftouch.Asc.OnBoarding
 
         #endregion
 
-        //private void Update()
-        //{
-        //    if (Input.GetKeyDown(KeyCode.LeftShift))
-        //    {
-        //        GetAnimatorStateReferences();
-        //        PlayBatsManAnimation(triggerShot, animationSpeed);
-        //    }
-        //    if (Input.GetKeyDown(KeyCode.LeftControl))
-        //    {
-        //        GetAnimatorStateReferences();
-        //        ResetToIdleAnimation();
-        //    }
-        //}
 
         public void InitBatsman()
         {
             GetAnimatorStateReferences();
             ResetToIdleAnimation();
         }
+
+        public void PlayShot()
+        {
+            PlayBatsManAnimation(triggerShot, animationSpeed);
+        }
+
 
         private void PlayBatsManAnimation(int animationTrigger, float animationSpeed, string triggerName = "")
         {
@@ -803,9 +797,11 @@ namespace Deftouch.Asc.OnBoarding
         }
 
         private void AssignCorrectShot()
-        { 
-            _animatorOverrideController[STATE_SHOT] = batsmanAnimHolder.GetBatsmanShotAnimations(0);
-            _animatorBatOverrideController[STATE_SHOT] = batsmanAnimHolder.GetBatShotAnimations(0);
+        {
+            GetAnimatorStateReferences();
+            int random = UnityEngine.Random.Range(0, batsmanAnimHolder.GetAnimationCount());
+            _animatorOverrideController[STATE_SHOT] = batsmanAnimHolder.GetBatsmanShotAnimations(random);
+            _animatorBatOverrideController[STATE_SHOT] = batsmanAnimHolder.GetBatShotAnimations(random);
         }
 
         public void ResetToIdleAnimation()

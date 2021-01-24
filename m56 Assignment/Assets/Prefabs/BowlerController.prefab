@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2407944969647763726}
-  - component: {fileID: 2719555409546557902}
+  - component: {fileID: 8379641787920564809}
   m_Layer: 0
-  m_Name: OnboardingBowlerController
+  m_Name: BowlerController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34,7 +34,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2719555409546557902
+--- !u!114 &8379641787920564809
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,7 +43,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2407944969647763724}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5933bf565933a747a0dfa65b462f194, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e6b2868246633443ada641007ef3ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   animBowler: {fileID: 6324811276990695387}
@@ -51,20 +51,6 @@ MonoBehaviour:
   bowlerBody: {fileID: 6324811277000193043}
   bowlerParent: {fileID: 6324811277000288353}
   bowlerHip: {fileID: 6324811277000288275}
-  speedFactor: 1.5
-  bowlerStartPos: {x: 0.5, y: 0, z: 13.2}
-  fakeBowlerIdle: {fileID: 6324811277944621528}
-  playerIndicatorParentBowler: {fileID: 6324811277000288281}
-  isBowlerFielding: 0
-  bowlerTimingIndicatorColors:
-  - {r: 1, g: 0.47058824, b: 0, a: 0}
-  - {r: 1, g: 0.7254902, b: 0, a: 0}
-  - {r: 0, g: 1, b: 0.25882354, a: 0}
-  - {r: 1, g: 0, b: 0, a: 0}
-  bowlerTimingIndicatorColorTimer:
-  - 0
-  - 0
-  - 0
   bowlerAnimHolderForBowler: {fileID: 11400000, guid: 8cc9a22a5a45a154ab71de259cf3ee01, type: 2}
   bowlerAnimHolderForBattingClient: {fileID: 11400000, guid: 8cc9a22a5a45a154ab71de259cf3ee01, type: 2}
 --- !u!1 &2407944970770931333
@@ -97,7 +83,7 @@ Transform:
   m_Father: {fileID: 2407944969647763726}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1088752340683647660
+--- !u!114 &815485211169244030
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,10 +92,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6324811277000193089}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25c880aa6fdb16c41b6fc9ff012b7fa4, type: 3}
+  m_Script: {fileID: 11500000, guid: e5e661608dff92d4ea1c2661061227ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bc: {fileID: 2719555409546557902}
+  bc: {fileID: 8379641787920564809}
   anim: {fileID: 6324811276990695387}
 --- !u!1001 &6324811277000159931
 PrefabInstance:
@@ -273,11 +259,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400040, guid: f9f2aae494c958646abacbcfc2b98ab2, type: 3}
   m_PrefabInstance: {fileID: 6324811277000159931}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &6324811277000288281 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400034, guid: f9f2aae494c958646abacbcfc2b98ab2, type: 3}
-  m_PrefabInstance: {fileID: 6324811277000159931}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6324811277944721186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -395,11 +376,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 5306f31174ffadb4d81932eadf07a3db, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9f2aae494c958646abacbcfc2b98ab2, type: 3}
---- !u!1 &6324811277944621528 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100090, guid: f9f2aae494c958646abacbcfc2b98ab2, type: 3}
-  m_PrefabInstance: {fileID: 6324811277944721186}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6324811277944329720 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400090, guid: f9f2aae494c958646abacbcfc2b98ab2, type: 3}

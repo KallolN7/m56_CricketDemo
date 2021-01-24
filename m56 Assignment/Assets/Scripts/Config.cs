@@ -13,6 +13,8 @@ public static class Config
     public static bool didHitWicket;
     public static bool canBowl;
     public static int InputIndex;
+    public const float shotDelayForPacer = 1;
+    public const float shotDelayForSpinner = 1.5f;
 }
 
 public static class PitchIndicatorData
@@ -36,4 +38,35 @@ public static class BallAnimationData
     public const float minYPos = 0.1f;
     public const float maxYPos = 3f;
     public const float heightConstant = 3;
+}
+
+public static class BowlerAnimData
+{
+    public const float speedFactor = 1.5f;
+    public const string STATE_STANCE = "1_Ball Juggle";
+    public const string STATE_RUNUP = "0_-1_3";
+    public static Vector3 bowlerStartPos = new Vector3(0.5f, 0, 13.2f); //new Vector3(1.43f, 0, 11.26f); 
+    public static Vector3 bowlerDefaultPos = new Vector3(0.5f, 0, 20);
+    public static Vector3 bowlerDefaultPosForSpinner = new Vector3(1.73f, 0, 14.95f);
+    public static Vector3 resetPosForPacer = new Vector3(0.5f, 2, 21.4f);
+    public static Vector3 resetPosForSpinner = new Vector3(1.8f, 2, 5.4f);
+    public static Vector3 runUpDelayPos = new Vector3(0.5f, 0, 13.2f);
+}
+ 
+public static class BatsmanAnimData
+{
+    public const string STATE_SHOT = "1_11_0_1";
+    public static int triggerIdle = Animator.StringToHash("Idle");
+    public static int triggerShot = Animator.StringToHash("Shot");
+}
+
+public static class StumpsData
+{
+    public static int hashBowled = Animator.StringToHash("Bowled");
+    public static int hashIdle = Animator.StringToHash("Idle");
+    public const string STATE_STUMP_DISLODGE = "OffStumpRebound";
+    public const float ballMaxPosXForOffStump = -0.15f;
+    public const float ballMinPosXForOffStump = -0.224f;
+    public const float ballMaxPosXForLegStump = -0.55f;
+    public const float ballMinPosXForLegStump = -0.452f;
 }
