@@ -6,6 +6,9 @@ using System;
 
 namespace m56
 {
+    /// <summary>
+    /// Controls the bowler animation. Switches bowler type on user input 
+    /// </summary>
     public class BowlerController : MonoBehaviour
     {
         //public static Action<float> OnBowlerRunupStarts;
@@ -42,21 +45,25 @@ namespace m56
         public void ResetToRunupPosition()
         {
             animBowler.ResetTrigger(runupHash);
-            StopBowlerRunUpCoroutine();
+            ///StopBowlerRunUpCoroutine();
             AssignRandomIdleAnimation();
-            //RepositionBowler(AllCoordinates.releasePointsDictionary[Config.BOWLER_RELEASE_POINT].GetReleasePoint() - GetRpOffset());
             isBowlerRunning = false;
             animBowler.SetTrigger("Stance");
         }
 
-
+        /// <summary>
+        ///  Starts Bowler animation
+        /// </summary>
         public void StartBowling()
         {
             ResetToRunupPosition();
             StartRunup("");
-            Debug.Log("OnboardingBowlerController, IsSpinner: " + Config.IS_BOWLER_SPINNER);
+            Debug.Log("BowlerController, IsSpinner: " + Config.IS_BOWLER_SPINNER);
         }
 
+        /// <summary>
+        /// Sets the Bowler's current position to it's default position 
+        /// </summary>
         public void SetDefaultPos()
         {
             AssignIdleAnimationOnDeliveryBeingSelected();
@@ -67,7 +74,9 @@ namespace m56
                 RepositionBowler(BowlerAnimData.bowlerDefaultPos);
         }
 
-
+        /// <summary>
+        ///  Sets Idle animation to Bowler animator 
+        /// </summary>
         public void AssignIdleAnimationOnDeliveryBeingSelected()
         {
             animOverride[BowlerAnimData.STATE_STANCE] = GetBowlerAnimationIdle();
@@ -76,13 +85,16 @@ namespace m56
 
         #endregion
 
-
+        
         #region PrivateMethods
 
-
+        /// <summary>
+        ///  Starts Bowler runup animation
+        /// </summary>
+        /// <param name="deliveryKey"></param>
         private void StartRunup(string deliveryKey)
         {
-            StopBowlerRunUpCoroutine();
+          //StopBowlerRunUpCoroutine();
             if (!isBowlerRunning)
             {
                 AssignRunupAnimation();
@@ -101,7 +113,6 @@ namespace m56
 
         /// <summary>
         /// Sets the speed of bowler animation. Can be used to make the delivery look easier
-        /// TODO - This method needs to take into account the delay in delivery of events
         /// </summary>
         void SetSpeedOfBowlerAnimation()
         {
@@ -110,7 +121,7 @@ namespace m56
       
 
         /// <summary>
-        /// This is currently being used to delay the runup by DeftouchConfig.BOWLING_CLIENT_RUNUP_DELAY on the Bowling Client in case of real player 
+        /// This is currently being used to delay the runup 
         /// </summary>
         void RunupDelayed()
         {
@@ -118,39 +129,37 @@ namespace m56
             animBowler.SetTrigger(runupHash);
 
            isBowlerRunning = true;
-
-            //if (OnBowlerRunupStarts != null)
-            //{
-            //    OnBowlerRunupStarts(bowlerTimingIndicatorColorTimer[0] + bowlerTimingIndicatorColorTimer[1] + bowlerTimingIndicatorColorTimer[2]);
-            //}
         }
+
+        /// <summary>
+        /// Assigns random Idle Animation clip to animator
+        /// </summary>
         private void AssignRandomIdleAnimation()
         {
             animOverride[BowlerAnimData.STATE_STANCE] = GetRandleBowlerAnimationIdle();
         }
 
+        /// <summary>
+        /// Assigns proper Bowler delivery animation
+        /// </summary>
         void AssignRunupAnimation()
         {
             animOverride[BowlerAnimData.STATE_RUNUP] = GetBowlerAnimForBowler(GetBowlerIndexInBowlerAnimHolder(), releaseIdList[0]);
         }
 
-        private void StartBowlerRunUp()
-        {
-            StopBowlerRunUpCoroutine();
-            bowlerRunUpStartOnIdleAnimComplete = StartCoroutine(StartBowlerRunUpCoroutine(GetBowlerAnimationIdle().length * animBowler.speed));
-        }
 
-        IEnumerator StartBowlerRunUpCoroutine(float time)
-        {
-            yield return new WaitForSeconds(time);
-            StartRunup("");
-        }
 
-        private void StopBowlerRunUpCoroutine()
-        {
-            if (bowlerRunUpStartOnIdleAnimComplete != null)
-                StopCoroutine(bowlerRunUpStartOnIdleAnimComplete);
-        }
+        ////IEnumerator StartBowlerRunUpCoroutine(float time)
+        ////{
+        ////    yield return new WaitForSeconds(time);
+        ////    StartRunup("");
+        ////}
+
+        ////private void StopBowlerRunUpCoroutine()
+        ////{
+        ////    if (bowlerRunUpStartOnIdleAnimComplete != null)
+        ////        StopCoroutine(bowlerRunUpStartOnIdleAnimComplete);
+        ////}
 
         /// <summary>
         ///  Get Index of the Character to Use Animations based on the Character Id.
@@ -164,14 +173,30 @@ namespace m56
 
         #region Bowlers Method
 
+        /// <summary>
+        /// Get Bowler animation clip from animHolder scriptable object based on animSet and animIndex
+        /// </summary>
+        /// <param name="animSet"></param>
+        /// <param name="animIndex"></param>
+        /// <returns></returns>
         private AnimationClip GetBowlerAnimForBowler(int animSet, int animIndex)
         {
             return bowlerAnimHolderForBowler.GetBowlerAnim(animSet, animIndex);
         }
+
+        /// <summary>
+        /// Get Bowler Idle Animatio clip
+        /// </summary>
+        /// <returns></returns>
         private AnimationClip GetBowlerAnimationIdle()
         {
             return bowlerAnimHolderForBowler.GetIdleAnim();
         }
+
+        /// <summary>
+        /// Get random bowler idle animation clip
+        /// </summary>
+        /// <returns></returns>
         private AnimationClip GetRandleBowlerAnimationIdle()
         {
             return bowlerAnimHolderForBowler.GetRandomAnimIdleClip();

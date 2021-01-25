@@ -3,21 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace m56
-{
+{ 
+    /// <summary>
+    /// Controls batsman animation
+    /// </summary>
     public class BatsmanController : MonoBehaviour
     {
+        [Header("Animation References")]
         [SerializeField]
         private Animator anim;
         [SerializeField]
         private Animator animBat;
         [SerializeField]
         private Animator animHelmet;
+        [SerializeField]
+        private Vector3 startPosition;
+        [SerializeField]
+        private Transform batsmanHips;
 
         private AnimatorOverrideController _animatorOverrideController;
         private AnimatorOverrideController _animatorBatOverrideController;
 
-        [SerializeField] private Vector3 startPosition;
-        [SerializeField] private Transform batsmanHips;
         private Vector3 batsmanHipsPositionOnStart = new Vector3(0f, 0f, 0f);
 
         [SerializeField]
@@ -29,18 +35,27 @@ namespace m56
 
         #region Public Methods
 
+        /// <summary>
+        /// Sets the batsman object to it's default values. Resets it to it's idle Animation
+        /// </summary>
         public void InitBatsman()
         {
             GetAnimatorStateReferences();
             ResetToIdleAnimation();
         }
 
+        /// <summary>
+        /// Plays Batsman Shot animation
+        /// </summary>
         public void PlayShot()
         {
             PlayBatsManAnimation(BatsmanAnimData.triggerShot, animationSpeed);
         }
 
 
+        /// <summary>
+        /// Resets batsman to it's idle Animation
+        /// </summary>
         public void ResetToIdleAnimation()
         {
             ResetAllTriggers();
@@ -53,6 +68,12 @@ namespace m56
 
 
         #region Private Methods
+
+        /// <summary>
+        /// Plays Batsman animation based on trigger and animation speed
+        /// </summary>
+        /// <param name="animationTrigger"></param>
+        /// <param name="animationSpeed"></param>
         private void PlayBatsManAnimation(int animationTrigger, float animationSpeed)
         {
             AssignCorrectShot();
@@ -69,6 +90,10 @@ namespace m56
             }
         }
 
+
+        /// <summary>
+        /// Assigns random Shot animation clip animator. 
+        /// </summary>
         private void AssignCorrectShot()
         {
             GetAnimatorStateReferences();
@@ -77,6 +102,9 @@ namespace m56
             _animatorBatOverrideController[BatsmanAnimData.STATE_SHOT] = batsmanAnimHolder.GetBatShotAnimations(random);
         }
 
+        /// <summary>
+        /// Resets all animator Triggers
+        /// </summary>
         private void ResetAllTriggers()
         {
             anim.ResetTrigger(BatsmanAnimData.triggerIdle);
@@ -86,7 +114,9 @@ namespace m56
             animBat.ResetTrigger(BatsmanAnimData.triggerShot);
         }
 
-
+        /// <summary>
+        /// Gets Animator State Refernces
+        /// </summary>
         private void GetAnimatorStateReferences()
         {
             //Batsman

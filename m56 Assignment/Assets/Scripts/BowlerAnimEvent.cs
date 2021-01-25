@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace m56
-{
+{ 
+    /// <summary>
+    /// Control events in animation clip
+    /// </summary>
     public class BowlerAnimEvent : MonoBehaviour
     {
         public BowlerController bc;

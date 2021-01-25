@@ -28,7 +28,10 @@ public static class PitchIndicatorData
 }
 
 public static class BallAnimationData
-{
+{ 
+    public static Vector3 ballDefaultPos = new Vector3(0.335f, 2, 13);
+    public static Vector3 ballPitchPos = new Vector3(0.335f, 0.05f, 7 );
+    public static Vector3 ballEndPos = new Vector3(0.335f, 2, -10);
     public const float ballPitchTimeForFastBowler = 0.5f;
     public const float ballEndTimeForFastBowler = 0.7f;
     public const float ballPitchTimeForSpinner = 0.9f;
