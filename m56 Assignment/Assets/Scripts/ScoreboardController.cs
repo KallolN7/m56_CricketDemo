@@ -49,8 +49,8 @@ namespace m56
         /// <param name="balls"></param>
         public void UpdateScoreTexts(int wickets, int balls)
         {
-            wicketsHitText.text = "Wickets: " + wickets;
-            ballsBowledText.text = "Balls: " + balls;
+            wicketsHitText.text = "Wickets Taken: " + wickets;
+            ballsBowledText.text = "Balls Bowled: " + balls;
         }
 
         /// <summary>

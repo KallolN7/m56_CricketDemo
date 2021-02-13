@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 namespace m56
-{
+{ 
+    /// <summary>
+    ///  Controls the stumps animations
+    /// </summary>
     public class StumpsController : MonoBehaviour
     {
         [SerializeField]
@@ -14,17 +17,18 @@ namespace m56
         private AnimatorOverrideController animOverrideController;
 
         #region Public Methods
-        public void Init()
-        {
-            animOverrideController = new AnimatorOverrideController(anim.runtimeAnimatorController);
-            anim.runtimeAnimatorController = animOverrideController;
-        }
-
+        /// <summary>
+        ///  Resets Stumps to Idle animation position
+        /// </summary>
         public void ResetStumps()
         {
             anim.SetTrigger(StumpsData.hashIdle);
         }
 
+        /// <summary>
+        ///  Play wicket Hit Animation
+        /// </summary>
+        /// <param name="index"></param>
         public void PlayBowledAnimation(int index)
         {
             animOverrideController = new AnimatorOverrideController(anim.runtimeAnimatorController);
@@ -40,6 +44,10 @@ namespace m56
 
         #region Private Methods
 
+        /// <summary>
+        ///  Checking if wickey is hit or not
+        /// </summary>
+        /// <param name="other"></param>
         private void OnTriggerEnter(Collider other)
         {
             if (other.tag == "Ball")
@@ -50,6 +58,10 @@ namespace m56
             }
         }
 
+        /// <summary>
+        /// Set animation clip based on which wicket is hit
+        /// </summary>
+        /// <param name="posX"></param>
         private void SetWicketAnimation(float posX)
         {
             if (posX <= StumpsData.ballMaxPosXForOffStump && posX >= StumpsData.ballMinPosXForOffStump)

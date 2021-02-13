@@ -1031,6 +1031,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8424050964122052576, guid: f6ae6dc78a1de3047b97e67c8c417b15, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8448645024680383642, guid: f6ae6dc78a1de3047b97e67c8c417b15, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0

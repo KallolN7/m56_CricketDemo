@@ -35,7 +35,7 @@ namespace m56
             if (Config.InputIndex == 2)
                 BallPitchController.instance.MovePitchIndicator();
 
-            if (Input.GetKeyDown(KeyCode.LeftShift) && Config.canBowl)
+            if (Input.GetKeyDown(KeyCode.RightShift) && Config.canBowl)
                 GameManager.instance.UpdateBowlerType();
         }
 
